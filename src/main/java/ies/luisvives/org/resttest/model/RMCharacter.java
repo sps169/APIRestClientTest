@@ -1,6 +1,5 @@
 package ies.luisvives.org.resttest.model;
 
-import java.net.URL;
 import java.util.List;
 
 
@@ -13,7 +12,7 @@ public class RMCharacter {
     Gender gender;
     Location origin;
     Location location;
-    URL image;
+    String image;
     List<String> episode;
     String url;
     String created;
@@ -22,8 +21,18 @@ public class RMCharacter {
 
     }
 
-    public RMCharacter(String id, String name, String status, String species, String type
-            , Gender gender, Location originLocation, Location lastKnownLocation, URL image, List<String> episode, String url, String created
+    public RMCharacter(String id
+            , String name
+            , String status
+            , String species
+            , String type
+            , Gender gender
+            , Location originLocation
+            , Location lastKnownLocation
+            , String image
+            , List<String> episode
+            , String url
+            , String created
     ) {
         this.id = id;
         this.name = name;
@@ -119,11 +128,11 @@ public class RMCharacter {
         this.location = location;
     }
 
-    public URL getImage() {
+    public String getImage() {
         return image;
     }
 
-    public void setImage(URL image) {
+    public void setImage(String image) {
         this.image = image;
     }
 
